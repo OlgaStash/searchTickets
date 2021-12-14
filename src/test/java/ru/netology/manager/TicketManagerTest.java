@@ -32,8 +32,8 @@ class TicketManagerTest {
     @Test
     public void shouldSearchByFromAndTo() {
         Ticket[] actual = manager.searchBy("LED", "MOW");
-        Ticket[] expected = {first, second, fourth};
-     assertArrayEquals(expected, actual);
+        Ticket[] expected = {first, fourth, second};
+        assertArrayEquals(expected, actual);
     }
 
     @Test
